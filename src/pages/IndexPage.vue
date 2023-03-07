@@ -1,24 +1,9 @@
 <template>
   <q-page class="column flex-center">
-    <q-knob
-      v-model="count"
-      :min="min"
-      :max="max"
-      size="80px"
-      show-value
-      :thickness="0.13"
-      color="primary"
-      track-color="dark"
-    >
-      <q-avatar size="75px">
-        <img alt="Quasar logo" src="~assets/quasar-logo-inner.svg" />
-      </q-avatar>
-    </q-knob>
-
     <img
       alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 140px"
+      src="~assets/homePage.png"
+      style="width: 400px; height: 280px"
     />
 
     <div class="q-mt-xl">
@@ -42,10 +27,20 @@
         @click="count++"
       />
     </div>
-
-    <div class="q-mt-md" style="width: 200px">
-      <q-slider v-model="count" :min="min" :max="max" />
-    </div>
+    <q-page-container>
+      <q-page class="q-pa-md">
+        <p class="q-mt-md q-mr-sm">
+          Ornare rhoncus nunc ut felis. Faucibus dolor at ultrices tincidunt.
+          Pulvinar sed justo et viverra pellentesque. Mauris augue nulla proin
+          vel a. Facilisis fringilla molestie dignissim elit orci malesuada.
+          Lorem sit sagittis vitae nulla id. Mauris ipsum sed sed faucibus.
+          Nulla amet metus gravida orci faucibus nisl eros arcu lorem. Nullam
+          ornare molestie nam id gravida volutpat bibendum sem feugiat. Neque
+          vulputate in et maecenas porta mi tellus. In massa porttitor urna quis
+          volutpat at.
+        </p>
+      </q-page>
+    </q-page-container>
   </q-page>
 </template>
 
@@ -54,6 +49,6 @@ import { ref } from 'vue';
 
 const count = ref(0);
 
-const min = -5;
-const max = 5;
+const min = 1;
+const max = 100;
 </script>
