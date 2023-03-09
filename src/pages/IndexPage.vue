@@ -1,11 +1,10 @@
 <template>
+  <div class="q-pa-md">
+    <q-carousel animated v-model="slide" arrows navigation infinite>
+      <q-carousel-slide :name="1" img-src="~assets/Rectangle.png" />
+    </q-carousel>
+  </div>
   <q-page class="column flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/Rectangle.png"
-      style="width: 400px; height: 280px"
-    />
-
     <div class="q-mt-xl">
       <q-btn
         color="primary"
@@ -46,9 +45,8 @@
 
 <script setup>
 import { ref } from 'vue';
-
 const count = ref(0);
-
 const min = 1;
 const max = 100;
+slide: ref(0);
 </script>
