@@ -2,7 +2,7 @@
   <q-page class="column flex-center">
     <img
       alt="Quasar logo"
-      src="~assets/homePage.png"
+      src="~assets/Rectangle.png"
       style="width: 400px; height: 280px"
     />
 
