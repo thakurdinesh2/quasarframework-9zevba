@@ -1,5 +1,8 @@
 <template>
   <div class="q-pa-md">
+    <q-img src="~assets/Logo.png">
+      <div class="absolute-bottom text-subtitle1 text-center">Caption</div>
+    </q-img>
     <q-carousel animated v-model="slide" arrows navigation infinite>
       <q-carousel-slide :name="1" img-src="~assets/Rectangle.png" />
     </q-carousel>
@@ -26,7 +29,7 @@
         @click="count++"
       />
     </div>
-    <q-page-container>
+    <q-page-container style="text-allign: center; max-width: 450px">
       <q-page class="q-pa-md">
         <p class="q-mt-md q-mr-sm">
           Ornare rhoncus nunc ut felis. Faucibus dolor at ultrices tincidunt.
@@ -42,11 +45,10 @@
     </q-page-container>
   </q-page>
 </template>
-
 <script setup>
 import { ref } from 'vue';
-const count = ref(0);
+const count = ref(1);
 const min = 1;
 const max = 100;
-slide: ref(0);
+slide: ref(1);
 </script>
