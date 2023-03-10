@@ -1,11 +1,11 @@
 <template>
   <div class="q-pa-md">
-    <q-img src="~assets/Logo.png">
-      <div class="absolute-bottom text-subtitle1 text-center">Caption</div>
+    <q-img
+      src="~assets/home_page_img.png"
+      style="max-width: 450px; text-align: center"
+      class="q-pa-md"
+    >
     </q-img>
-    <q-carousel animated v-model="slide" arrows navigation infinite>
-      <q-carousel-slide :name="1" img-src="~assets/Rectangle.png" />
-    </q-carousel>
   </div>
   <q-page class="column flex-center">
     <div class="q-mt-xl">
