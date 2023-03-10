@@ -1,8 +1,8 @@
 <template>
-  <div class="q-pa-md">
+  <div class="q-pa-md" style="text-align: center">
     <q-img
       src="~assets/home_page_img.png"
-      style="max-width: 450px; text-align: center"
+      style="max-width: 450px"
       class="q-pa-md"
     >
     </q-img>
